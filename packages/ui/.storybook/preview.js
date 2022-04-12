@@ -1,7 +1,6 @@
 import '../src/styles/global.css'
-import { theme } from '../src/styles/theme'
-import { useTheme, ThemeProvider } from '@mui/material/styles'
-// import { themes } from '@storybook/theming'
+import { Darkmode } from '../src/styles/Switch'
+import { useDarkMode } from 'storybook-dark-mode'
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
@@ -14,9 +13,11 @@ export const parameters = {
 }
 
 export const decorators = [
-  Story => (
-    <ThemeProvider theme={theme}>
-      <Story />
-    </ThemeProvider>
-  ),
+  Story => {
+    let currentTheme = 'light'
+    if (useDarkMode()) {
+      currentTheme = 'dark'
+    }
+    return <Darkmode story={Story} darkmode={currentTheme} />
+  },
 ]

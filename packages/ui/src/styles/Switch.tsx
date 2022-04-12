@@ -1,3 +1,4 @@
+import { ThemeProvider } from '@mui/material/styles'
 import { PaletteMode } from '@mui/material'
 import { amber, deepOrange, green, grey } from '@mui/material/colors'
 import { createTheme } from '@mui/material/styles'
@@ -31,18 +32,7 @@ const getDesignTokens = (mode: PaletteMode) => ({
   },
 })
 
-// var btn = document.getBy('button')
-// btn.addEventListener(
-//   'click',
-//   () => {
-//     nn = JSON.parse(
-//       window.localStorage.getItem('sb-addon-themes-3') as string,
-//     ).current
-//   },
-//   false,
-// )
-
-// console.log(useDarkMode())
-
-export const theme = createTheme(getDesignTokens('dark'))
-console.log('🚀 ~ file: theme.tsx ~ line 51 ~ theme', theme)
+export const Darkmode = ({ story, darkmode }: any): JSX.Element => {
+  const theme = createTheme(getDesignTokens(darkmode))
+  return <ThemeProvider theme={theme}>{story()}</ThemeProvider>
+}
