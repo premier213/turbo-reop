@@ -1,5 +1,5 @@
-import '../src/styles/global.css'
-import { Darkmode } from '../src/styles/Switch'
+import '@config/global.css'
+import { Darkmode } from '@config/theme'
 import { useDarkMode } from 'storybook-dark-mode'
 
 export const parameters = {
