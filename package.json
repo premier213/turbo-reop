@@ -32,12 +32,12 @@
     "apps/**/*.{ts,tsx}": [
       "prettier --write",
       "eslint --fix",
-      "tsc --pretty --noEmit"
+      "tsc"
     ],
     "packages/ui/**/*.{ts,tsx}": [
       "prettier --write",
       "eslint --fix",
-      "tsc --pretty --noEmit"
+      "tsc"
     ],
     "*.json": [
       "prettier --write"
