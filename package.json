@@ -28,5 +28,26 @@
     "npm": ">=7.0.0",
     "node": ">=14.0.0"
   },
+  "lint-staged": {
+    "apps/**/*.{js,ts,jsx,tsx}": [
+      "prettier --write",
+      "eslint --fix",
+      "tsc --pretty --noEmit"
+    ],
+    "packages/ui/**/*.{js,ts,jsx,tsx}": [
+      "prettier --write",
+      "eslint --fix",
+      "tsc --pretty --noEmit"
+    ],
+    "*.json": [
+      "prettier --write"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "turbo run test"
+    }
+  },
   "packageManager": "yarn@1.22.17"
 }
