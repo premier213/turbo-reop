@@ -3,11 +3,6 @@ module.exports = {
     browser: true,
     node: true,
   },
-  ecmaFeatures: {
-    jsx: true,
-    jest: true,
-    sourceType: 'module',
-  },
   globals: {
     JSX: true,
   },
