@@ -6,7 +6,9 @@
   "license": "MIT",
   "scripts": {
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "test": "jest",
+    "type": "tsc --pretty --noEmit"
   },
   "devDependencies": {
     "@emotion/react": "^11.9.0",

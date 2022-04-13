@@ -11,6 +11,7 @@
     "dev": {
       "cache": false
     },
+    "type": {},
     "test": {},
     "storybook": {
       "cache": true
