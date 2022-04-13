@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "files": [
-    "eslint-next.js"
+    "eslint-next.js",
+    "eslint-react.js"
   ],
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.7.0",
@@ -16,9 +17,20 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-import-resolver-typescript": "^2.5.0",
     "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-jsx-a11y": "latest",
     "eslint-plugin-jest": "^25.3.0",
     "eslint-plugin-jest-dom": "^4.0.1",
+    "eslint-plugin-jsx-a11y": "latest",
     "eslint-plugin-testing-library": "^5.0.1"
+  },
+  "devDependencies": {
+    "eslint-plugin-jest": "^26.1.4",
+    "eslint-plugin-jest-dom": "^4.0.1",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.4.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-tailwindcss": "^3.5.0",
+    "eslint-plugin-testing-library": "^5.3.1",
+    "eslint-plugin-unicorn": "^42.0.0"
   }
 }

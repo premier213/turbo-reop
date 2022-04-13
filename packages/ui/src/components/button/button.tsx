@@ -1,12 +1,12 @@
-import { Button as Btn, ButtonProps } from '@mui/material'
+import { Button as Button_, ButtonProps } from '@mui/material'
 
-export const Button = (props: ButtonProps): JSX.Element => {
-  const { children } = props
+export const Button = (properties: ButtonProps): JSX.Element => {
+  const { children } = properties
 
   return (
     <>
-      <Btn {...props}>{children}</Btn>
-      <div className="bg-red-500 dark:bg-blue-500">BTN5</div>
+      <Button_ {...properties}>{children}</Button_>
+      <div className="mt-32 bg-red-500 dark:bg-blue-500">BTN5</div>
     </>
   )
 }

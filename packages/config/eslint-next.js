@@ -14,9 +14,6 @@ module.exports = {
   ],
   plugins: ['@typescript-eslint', 'import'],
   settings: {
-    next: {
-      rootDir: ['apps/*/', 'packages/*/'],
-    },
     'import/parsers': {
       '@typescript-eslint/parser': ['.ts', '.tsx'],
     },

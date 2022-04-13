@@ -1,7 +1,6 @@
-import { ThemeProvider } from '@mui/material/styles'
+import { ThemeProvider, createTheme } from '@mui/material/styles'
 import { PaletteMode } from '@mui/material'
 import { amber, deepOrange, green, grey } from '@mui/material/colors'
-import { createTheme } from '@mui/material/styles'
 
 const getDesignTokens = (mode: PaletteMode) => ({
   palette: {
@@ -34,5 +33,6 @@ const getDesignTokens = (mode: PaletteMode) => ({
 
 export const Darkmode = ({ story, darkmode }: any): JSX.Element => {
   const theme = createTheme(getDesignTokens(darkmode))
+
   return <ThemeProvider theme={theme}>{story()}</ThemeProvider>
 }

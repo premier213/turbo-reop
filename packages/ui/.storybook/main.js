@@ -19,8 +19,6 @@ module.exports = {
       (config.resolve.alias = {
         ...config.resolve.alias,
         '@com': path.resolve(__dirname, '../src/components'),
-        '@hook': path.resolve(__dirname, '../src/hooks'),
-        '@style': path.resolve(__dirname, '../src/styles'),
         '@config': path.resolve(__dirname, '../src/config'),
       })
 
