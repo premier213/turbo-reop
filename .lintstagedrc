@@ -1,0 +1,15 @@
+{
+  "apps/**/*.{ts,tsx}": [
+    "prettier --write",
+    "eslint --fix",
+    "tsc --pretty --noEmit"
+  ],
+  "packages/ui/**/*.{ts,tsx}": [
+    "prettier --write",
+    "eslint --fix",
+    "tsc --pretty --noEmit"
+  ],
+  "*.json": [
+    "prettier --write"
+  ]
+}
