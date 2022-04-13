@@ -1,1 +1,1 @@
-export { Button } from '@com/button/button'
+export { Button } from './components/button/button'

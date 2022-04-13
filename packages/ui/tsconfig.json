@@ -1,11 +1,5 @@
 {
-  "extends": "tsconfig/nextjs.json",
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@com/*": ["src/components/*"]
-    }
-  },
-  "include": ["."],
+  "extends": "tsconfig/react-library.json",
+  "include": ["./**/*ts", "./**/*tsx"],
   "exclude": ["dist", "build", "node_modules", ".turbo", ".storybook"]
 }
