@@ -9,7 +9,7 @@
     "build-storybook": "build-storybook",
     "lint": "eslint --fix",
     "test": "jest",
-    "type": "tsc --pretty --noEmit"
+    "type": "tsc"
   },
   "devDependencies": {
     "@emotion/react": "^11.9.0",
