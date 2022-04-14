@@ -20,6 +20,7 @@
     "lint-staged": "lint-staged"
   },
   "devDependencies": {
+    "@babel/preset-react": "^7.16.7",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.0.1",
     "@testing-library/react-hooks": "^8.0.0",
@@ -34,6 +35,7 @@
     "jest-watch-typeahead": "^1.0.0",
     "lint-staged": "^12.3.7",
     "prettier": "^2.6.2",
+    "ts-jest": "^27.1.4",
     "turbo": "latest"
   },
   "engines": {
@@ -41,10 +43,10 @@
     "node": ">=14.0.0"
   },
   "lint-staged": {
-    "apps/**/*.{js,ts,jsx,tsx}": [
+    "apps/**/*.{ts,jsx,tsx}": [
       "eslint --fix"
     ],
-    "packages/ui/**/*.{js,ts,jsx,tsx}": [
+    "packages/ui/**/*.{ts,jsx,tsx}": [
       "eslint --fix"
     ],
     "*.json": [

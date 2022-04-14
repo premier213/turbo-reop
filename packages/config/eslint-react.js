@@ -4,9 +4,6 @@ module.exports = {
     node: true,
     jest: true,
   },
-  globals: {
-    JSX: true,
-  },
   parser: '@typescript-eslint/parser',
   extends: [
     'eslint:recommended',

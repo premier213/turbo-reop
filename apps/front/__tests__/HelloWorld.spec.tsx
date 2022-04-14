@@ -1,9 +1,6 @@
-import React from 'react'
 import { render, screen } from '@testing-library/react'
-import HelloWorld from '@front/components/HelloWorld'
+import HelloWorld from '@src/components/HelloWorld'
 import '@testing-library/jest-dom'
-
-global.React = React as any
 
 describe('tests', () => {
   it('should', () => {

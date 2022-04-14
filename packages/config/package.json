@@ -25,6 +25,7 @@
     "eslint-plugin-testing-library": "^5.0.1"
   },
   "devDependencies": {
+    "babel-jest": "^27.5.1",
     "eslint-plugin-jest": "^26.1.4",
     "eslint-plugin-jest-dom": "^4.0.1",
     "eslint-plugin-promise": "^6.0.0",
@@ -33,6 +34,7 @@
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "eslint-plugin-tailwindcss": "^3.5.0",
     "eslint-plugin-testing-library": "^5.3.1",
-    "eslint-plugin-unicorn": "^42.0.0"
+    "eslint-plugin-unicorn": "^42.0.0",
+    "ts-jest": "^27.1.4"
   }
 }

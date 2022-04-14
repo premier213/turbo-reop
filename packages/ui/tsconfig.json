@@ -3,7 +3,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@ui/*": ["src/*"]
+      "@src/*": ["src/*"]
     }
   },
   "include": ["**/*.ts", "**/*.tsx", "types.d.ts"],

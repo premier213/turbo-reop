@@ -4,7 +4,7 @@ const { compilerOptions } = require('./tsconfig')
 const fromRoot = d => path.join(__dirname, d)
 module.exports = {
   ...base,
-  displayName: 'ui Tests',
+  displayName: 'office Tests',
   modulePaths: [compilerOptions.baseUrl],
   moduleNameMapper: {
     '@src/(.*)': fromRoot('src/$1'),

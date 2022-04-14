@@ -2,6 +2,7 @@ module.exports = {
   env: {
     browser: true,
     node: true,
+    jest: true,
   },
   extends: [
     'next',
@@ -20,7 +21,7 @@ module.exports = {
     'import/resolver': {
       typescript: {
         alwaysTryTypes: true,
-        project: ['apps/*/tsconfig.json'],
+        project: 'apps/*/tsconfig.json',
       },
     },
   },
@@ -30,11 +31,10 @@ module.exports = {
     //react
     'react/function-component-definition': 'off',
     //import
-    'import/no-unresolved': 'off',
+    'import/no-unresolved': 'error',
     'import/no-duplicates': 'error',
     'import/first': 'error',
     'import/newline-after-import': 'error',
-    'import/no-unresolved': 'off',
     // react
     'react/jsx-props-no-spreading': 'off',
     'react/react-in-jsx-scope': 'off',

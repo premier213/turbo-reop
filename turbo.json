@@ -13,7 +13,6 @@
     },
     "type": {},
     "test": {
-      "dependsOn": ["^build"],
       "outputs": ["coverage/**"]
     },
     "storybook": {
