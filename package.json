@@ -39,7 +39,7 @@
     "node": ">=14.0.0"
   },
   "lint-staged": {
-    "apps/**/*.{ts,jsx,tsx}": [
+    "apps/**": [
       "lint"
     ],
     "packages/ui/**/*.{ts,jsx,tsx}": [
