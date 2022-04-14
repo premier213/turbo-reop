@@ -38,6 +38,11 @@
     "npm": ">=7.0.0",
     "node": ">=14.0.0"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "lint-staged": {
     "*.{ts,jsx,tsx}": [
       "eslint --ext .ts,.tsx --fix --color apps/front/src/"
