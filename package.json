@@ -44,7 +44,7 @@
       "eslint --fix -c .eslintrc.js --ext .ts,.tsx src"
     ],
     "packages/ui/**/*.{ts,jsx,tsx}": [
-      "eslint --fix --color -c ./packages/ui/.eslintrc.js --ext .ts,.tsx src/"
+      "eslint --fix --color -c ~/packages/ui/.eslintrc.js --ext .ts,.tsx src/"
     ],
     "*.json": [
       "prettier --write"
