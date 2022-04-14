@@ -4,7 +4,7 @@ import { amber, deepOrange, green, grey } from '@mui/material/colors'
 
 console.log(1)
 
-const getDesignTokens = (mode: PaletteMode) => ({
+const getDesignTokens = (mode: PaletteMode): JSX.Element => ({
   palette: {
     mode,
     ...(mode === 'light'

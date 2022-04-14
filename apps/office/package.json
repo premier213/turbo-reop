@@ -6,7 +6,7 @@
     "dev": "next dev --port 3001",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint -c .eslintrc.js --ext .ts,.tsx src --fix",
+    "lint": "eslint -c .eslintrc.js --ext .ts,.tsx --fix --color src/",
     "type": "tsc --noEmit --incremental false"
   },
   "dependencies": {

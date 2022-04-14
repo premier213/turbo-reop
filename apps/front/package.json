@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "test": "jest --coverage",
-    "lint": "eslint -c .eslintrc.js --ext .ts,.tsx src --fix",
+    "lint": "eslint -c .eslintrc.js --ext .ts,.tsx --fix --color src/",
     "type": "tsc --noEmit --pretty"
   },
   "dependencies": {

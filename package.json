@@ -39,11 +39,11 @@
     "node": ">=14.0.0"
   },
   "lint-staged": {
-    "apps/**": [
-      "lint"
+    "apps": [
+      "eslint --ext .ts,.tsx --fix --color apps/front/src/"
     ],
-    "packages/ui/**/*.{ts,jsx,tsx}": [
-      "lint"
+    "ui": [
+      "eslint --ext .ts,.tsx --fix --color packages/ui/src/"
     ],
     "*.json": [
       "prettier --write"
