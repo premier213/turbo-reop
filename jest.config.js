@@ -10,7 +10,7 @@ module.exports = {
   ],
   resetMocks: true,
   coveragePathIgnorePatterns: [],
-  collectCoverageFrom: ['<rootDir>/**/*.{js,ts,tsx}'],
+  collectCoverageFrom: ['<rootDir>/src/**/*.{js,ts,tsx}'],
   coverageThreshold: null,
   testEnvironment: 'jsdom',
   transform: {

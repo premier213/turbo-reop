@@ -4,8 +4,7 @@
     "baseUrl": ".",
     "paths": {
       "@ui/*": ["src/*"]
-    },
-    "jsx": "react"
+    }
   },
   "include": ["**/*.ts", "**/*.tsx", "types.d.ts"],
   "exclude": ["dist", "build", "node_modules", ".turbo", ".storybook"]
