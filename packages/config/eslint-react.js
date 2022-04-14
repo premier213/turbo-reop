@@ -8,6 +8,7 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:react/jsx-runtime',
+    'plugin:react/recommended',
     'plugin:import/recommended',
     'plugin:import/typescript',
     'plugin:promise/recommended',
@@ -41,6 +42,7 @@ module.exports = {
     'import/first': 'error',
     'import/newline-after-import': 'error',
     'import/no-unresolved': 'off',
+    'import/prefer-default-export': 'off',
     // react
     'no-unused-vars': [
       'error',
@@ -55,7 +57,7 @@ module.exports = {
     // next
     '@next/next/no-html-link-for-pages': 'off',
     //eslint
-    'import/prefer-default-export': 'off',
+    'no-undef': 'error',
     'no-restricted-imports': 'off',
     'no-console': 'warn',
     'padding-line-between-statements': [

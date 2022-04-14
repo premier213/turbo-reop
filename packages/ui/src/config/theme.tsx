@@ -31,7 +31,7 @@ const getDesignTokens = (mode: PaletteMode) => ({
   },
 })
 
-export const Darkmode = ({ story, darkmode }: any): JSX.Element => {
+export const Darkmode = ({ story, darkmode }: any) => {
   const theme = createTheme(getDesignTokens(darkmode))
 
   return <ThemeProvider theme={theme}>{story()}</ThemeProvider>

@@ -17,9 +17,6 @@
     },
     "storybook": {
       "cache": true
-    },
-    "build-storybook": {
-      "outputs": ["dist/**"]
     }
   },
   "baseBranch": "origin/main"
