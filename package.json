@@ -40,10 +40,10 @@
   },
   "lint-staged": {
     "apps/**/*.{ts,jsx,tsx}": [
-      "eslint './apps/**/*.{ts,jsx,tsx}' --fix"
+      "eslint './apps/**/src/**' --ext .ts,.tsx --fix"
     ],
     "packages/ui/**/*.{ts,jsx,tsx}": [
-      "eslint './packages/ui/**/*.{ts,jsx,tsx}' --fix"
+      "eslint './packages/ui/src/**' --ext .ts,.tsx --fix"
     ],
     "*.json": [
       "prettier --write"
