@@ -39,10 +39,10 @@
     "node": ">=14.0.0"
   },
   "lint-staged": {
-    "apps": [
-      "eslint --ext .ts,.tsx --fix --color apps/front/src/"
+    "apps/**/*.{ts,jsx,tsx}": [
+      "eslint --ext .ts,.tsx --fix --color ."
     ],
-    "ui": [
+    "packages/ui/**/*.{ts,jsx,tsx}": [
       "eslint --ext .ts,.tsx --fix --color packages/ui/src/"
     ],
     "*.json": [
