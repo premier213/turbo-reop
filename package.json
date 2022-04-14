@@ -43,7 +43,7 @@
       "eslint --ext .ts,.tsx --fix --color apps/front/src/"
     ],
     "packages/ui/**/*.{ts,jsx,tsx}": [
-      "eslint --ext .ts,.tsx --fix --color packages/ui/src/"
+      "eslint --ext .ts,.tsx --fix --color"
     ],
     "*.json": [
       "prettier --write"
