@@ -12,12 +12,15 @@
       "cache": false
     },
     "type": {},
-    "test": {},
+    "test": {
+      "dependsOn": ["^build"],
+      "outputs": ["coverage/**"]
+    },
     "storybook": {
       "cache": true
     },
     "build-storybook": {
-      "outputs": ["storybook-static/**"]
+      "outputs": ["dist/**"]
     }
   },
   "baseBranch": "origin/main"

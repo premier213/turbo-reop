@@ -6,8 +6,9 @@
     "dev": "next dev --port 3000",
     "build": "next build",
     "start": "next start",
+    "test": "jest --coverage",
     "lint": "eslint src --fix",
-    "type": "tsc"
+    "type": "tsc --noEmit --pretty"
   },
   "dependencies": {
     "next": "12.1.4",

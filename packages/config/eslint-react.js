@@ -2,6 +2,7 @@ module.exports = {
   env: {
     browser: true,
     node: true,
+    jest: true,
   },
   globals: {
     JSX: true,
@@ -44,6 +45,13 @@ module.exports = {
     'import/newline-after-import': 'error',
     'import/no-unresolved': 'off',
     // react
+    'no-unused-vars': [
+      'error',
+      {
+        varsIgnorePattern: '^React$',
+      },
+    ],
+    'react/jsx-uses-react': 'off',
     'react/function-component-definition': 'off',
     'react/jsx-props-no-spreading': 'off',
     'react/react-in-jsx-scope': 'off',
@@ -91,5 +99,20 @@ module.exports = {
       version: require('jest/package.json').version,
     },
   },
+  overrides: [
+    {
+      env: {
+        jest: true,
+      },
+      files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
+      extends: ['plugin:testing-library/react', 'plugin:jest/recommended'],
+      rules: {
+        'import/no-extraneous-dependencies': [
+          'off',
+          { devDependencies: ['**/?(*.)+(spec|test).[jt]s?(x)'] },
+        ],
+      },
+    },
+  ],
   ignorePatterns: ['**/*.js', 'node_modules', '.turbo', 'dist', 'coverage'],
 }

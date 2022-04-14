@@ -1,3 +1,4 @@
+import React from 'react'
 import { Button as Button_, ButtonProps } from '@mui/material'
 
 export const Button = (properties: ButtonProps): JSX.Element => {

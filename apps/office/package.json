@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint src --fix",
-    "type": "tsc"
+    "type": "tsc --noEmit --incremental false"
   },
   "dependencies": {
     "next": "12.1.4",

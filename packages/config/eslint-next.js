@@ -25,6 +25,8 @@ module.exports = {
     },
   },
   rules: {
+    // next
+    '@next/next/no-html-link-for-pages': 'off',
     //react
     'react/function-component-definition': 'off',
     //import

@@ -2,14 +2,15 @@
   "apps/**/*.{ts,tsx}": [
     "prettier --write",
     "eslint --fix",
-    "tsc --pretty --noEmit"
+    "git add"
   ],
   "packages/ui/**/*.{ts,tsx}": [
     "prettier --write",
     "eslint --fix",
-    "tsc --pretty --noEmit"
+    "git add"
   ],
   "*.json": [
-    "prettier --write"
+    "prettier --write",
+    "git add"
   ]
 }
