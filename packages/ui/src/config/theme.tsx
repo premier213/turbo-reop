@@ -2,6 +2,8 @@ import { ThemeProvider, createTheme } from '@mui/material/styles'
 import { PaletteMode } from '@mui/material'
 import { amber, deepOrange, green, grey } from '@mui/material/colors'
 
+console.log(1)
+
 const getDesignTokens = (mode: PaletteMode) => ({
   palette: {
     mode,
