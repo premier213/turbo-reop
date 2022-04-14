@@ -43,7 +43,7 @@
       "eslint"
     ],
     "packages/ui/**/*.{ts,jsx,tsx}": [
-      "eslint './packages/ui/src/**' --ext .ts,.tsx --fix"
+      "eslint"
     ],
     "*.json": [
       "prettier --write"
