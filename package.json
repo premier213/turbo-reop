@@ -40,8 +40,8 @@
   },
   "lint-staged": {
     "apps/**/*.{ts,jsx,tsx}": [
-      "eslint --fix -c apps/front/.eslintrc.js --ext .ts,.tsx src",
-      "eslint --fix -c apps/office/.eslintrc.js --ext .ts,.tsx src"
+      "eslint --fix -c .eslintrc.js --ext .ts,.tsx src",
+      "eslint --fix -c .eslintrc.js --ext .ts,.tsx src"
     ],
     "packages/ui/**/*.{ts,jsx,tsx}": [
       "eslint --fix --color -c packages/ui/.eslintrc.js --ext .ts,.tsx ."
