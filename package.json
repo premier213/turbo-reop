@@ -40,26 +40,15 @@
     "npm": ">=7.0.0",
     "node": ">=14.0.0"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "type && lint-staged",
-      "pre-push": "turbo run test"
-    }
-  },
   "lint-staged": {
-    "apps/**/*.{ts,tsx}": [
-      "prettier --write",
-      "eslint --fix",
-      "git add"
+    "apps/**/*.{js,ts,jsx,tsx}": [
+      "eslint --fix"
     ],
-    "packages/ui/**/*.{ts,tsx}": [
-      "prettier --write",
-      "eslint --fix",
-      "git add"
+    "packages/ui/**/*.{js,ts,jsx,tsx}": [
+      "eslint --fix"
     ],
     "*.json": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ]
   },
   "packageManager": "yarn@1.22.17"
