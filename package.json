@@ -40,7 +40,7 @@
   },
   "lint-staged": {
     "apps/**/*.{ts,jsx,tsx}": [
-      "test && eslint --fix"
+      "test"
     ],
     "packages/ui/**/*.{ts,jsx,tsx}": [
       "eslint --ext .ts,.tsx --fix --color"
