@@ -15,8 +15,7 @@
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
     "storybook": "turbo run storybook",
     "test": "turbo run test",
-    "prepare": "husky install",
-    "lint-staged": "lint-staged"
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@babel/preset-react": "^7.16.7",
