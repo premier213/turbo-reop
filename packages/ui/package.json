@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "storybook": "start-storybook -p 6006",
-    "build": "build-storybook -o dist/",
+    "build": "build-storybook -o build/",
     "lint": "eslint -c .eslintrc.js --ext .ts,.tsx --fix --color src/",
     "test": "jest --coverage",
     "type": "tsc --noEmit --incremental false",
