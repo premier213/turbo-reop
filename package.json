@@ -15,22 +15,7 @@
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
     "storybook": "turbo run storybook",
     "test": "turbo run test",
-    "prepare": "husky install"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "apps/**/*.{ts,tsx}": [
-      "yarn lint",
-      "yarn type"
-    ],
-    "packages/ui/*.{ts,tsx}": [
-      "yarn lint",
-      "yarn type"
-    ]
+    "prepare": "husky install && npx husky add .husky/pre-commit 'yarn lint' && npx husky add .husky/pre-commit 'yarn type' && npx husky add .husky/pre-push 'yarn test' && npx husky add .husky/pre-push 'yarn build'"
   },
   "devDependencies": {
     "@babel/preset-react": "^7.16.7",
@@ -43,7 +28,6 @@
     "husky": "^7.0.4",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.5.1",
-    "lint-staged": "^12.3.7",
     "prettier": "^2.6.2",
     "ts-jest": "^27.1.4",
     "turbo": "latest"
