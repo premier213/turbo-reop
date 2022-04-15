@@ -4,7 +4,10 @@ module.exports = {
     '../../packages/ui/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
+    debugScreens: {
+      position: ['bottom', 'right'],
+    },
     extend: {},
   },
-  plugins: [],
+  plugins: [require('tailwindcss-debug-screens')],
 }
