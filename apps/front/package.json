@@ -8,7 +8,7 @@
     "start": "next start",
     "test": "jest --coverage",
     "lint": "eslint -c .eslintrc.js --ext .ts,.tsx --fix --color src/",
-    "type": "tsc --noEmit --pretty"
+    "type": "tsc --noEmit --incremental false"
   },
   "dependencies": {
     "next": "12.1.4",
