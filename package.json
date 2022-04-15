@@ -40,7 +40,8 @@
   },
   "lint-staged": {
     "apps/**/*.{ts,jsx,tsx}": [
-      "npm run test"
+      "npm run test",
+      "prettier --write"
     ],
     "packages/ui/**/*.{ts,jsx,tsx}": [
       "eslint --ext .ts,.tsx --fix --color"
