@@ -17,6 +17,21 @@
     "test": "turbo run test",
     "prepare": "husky install"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "apps/**/*.{ts,tsx}": [
+      "yarn lint",
+      "yarn type"
+    ],
+    "packages/ui/*.{ts,tsx}": [
+      "yarn lint",
+      "yarn type"
+    ]
+  },
   "devDependencies": {
     "@babel/preset-react": "^7.16.7",
     "@testing-library/jest-dom": "^5.16.4",
@@ -37,13 +52,5 @@
     "npm": ">=7.0.0",
     "node": ">=14.0.0"
   },
-  "packageManager": "yarn@1.22.17",
-  "lint-staged": {
-    "apps/**/*.{ts,tsx,md}": [
-      "prettier --write"
-    ],
-    "*.{ts,tsx,md}": [
-      "prettier --write"
-    ]
-  }
+  "packageManager": "yarn@1.22.17"
 }
