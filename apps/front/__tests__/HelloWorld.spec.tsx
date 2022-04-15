@@ -4,7 +4,7 @@ import '@testing-library/jest-dom'
 
 describe('tests', () => {
   it('should', () => {
-    render(<HelloWorld />)
+    render(<HelloWorld value="name" />)
     expect(screen.getByText('BTN5')).toBeInTheDocument()
   })
 })

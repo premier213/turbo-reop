@@ -41,6 +41,7 @@ module.exports = {
     // next
     '@next/next/no-html-link-for-pages': 'off',
     //eslint
+    'no-param-reassign': 'off',
     'import/prefer-default-export': 'off',
     'no-restricted-imports': 'off',
     'no-console': 'warn',
