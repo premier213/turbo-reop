@@ -38,17 +38,18 @@
     "npm": ">=7.0.0",
     "node": ">=14.0.0"
   },
+  "packageManager": "yarn@1.22.17",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "lint-staged": {
-    "apps/**/*.{ts,jsx,tsx}": [
-      "npm run test",
+    "apps/**/*.{ts,tsx,md}": [
       "prettier --write"
     ],
-    "packages/ui/**/*.{ts,jsx,tsx}": [
-      "eslint --ext .ts,.tsx --fix --color"
-    ],
-    "*.json": [
+    "*.{ts,tsx,md}": [
       "prettier --write"
     ]
-  },
-  "packageManager": "yarn@1.22.17"
+  }
 }
